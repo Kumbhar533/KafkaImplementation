@@ -1,0 +1,25 @@
+package com.nilesh.kafka.consumer;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class orderEntity {
+
+	@JsonProperty("orderId")
+	private Long orderId;
+
+	@JsonProperty("orderPrice")
+	private Double orderPrice;
+
+	@JsonProperty("location")
+	private String location;
+
+	@JsonProperty("shippingDate")
+	@JsonFormat(shape = JsonFormat.Shape.NUMBER)
+	private Long shippingDate;
+
+	@JsonProperty("deliveryDate")
+	@JsonFormat(shape = JsonFormat.Shape.NUMBER)
+	private Long deliveryDate;
+
+}

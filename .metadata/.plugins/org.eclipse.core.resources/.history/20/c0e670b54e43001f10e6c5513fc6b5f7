@@ -1,0 +1,7 @@
+# Application name and server port
+spring.application.name=kafkaConsumer
+server.port=9001
+
+# Kafka bootstrap servers and consumer group ID
+spring.kafka.bootstrap-servers=localhost:9092
+spring.kafka.consumer.group-id=my-consumer-group

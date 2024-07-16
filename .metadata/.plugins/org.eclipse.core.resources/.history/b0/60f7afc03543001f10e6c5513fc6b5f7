@@ -1,0 +1,5 @@
+package com.nilesh.kafka.producer.entity;
+
+public class orderEntity {
+
+}

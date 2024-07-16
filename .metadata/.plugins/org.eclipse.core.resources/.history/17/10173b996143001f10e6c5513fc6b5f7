@@ -1,0 +1,19 @@
+package com.nilesh.kafka.consumer.service;
+
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.messaging.handler.annotation.Header;
+import org.springframework.messaging.handler.annotation.Payload;
+import org.springframework.stereotype.Service;
+
+import com.nilesh.kafka.consumer.orderEntity;
+
+@Service
+public class consumerService {
+
+	@KafkaListener(topics = "orders", groupId = "my-consumer-group")
+	public void getAllOrders(String message) {
+
+		System.out.println(message);
+	}
+
+}

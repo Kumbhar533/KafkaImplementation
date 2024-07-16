@@ -1,0 +1,67 @@
+package com.nilesh.kafka.consumer;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class orderEntity {
+
+	@JsonProperty("orderId")
+	private Long orderId;
+
+	@JsonProperty("orderPrice")
+	private Double orderPrice;
+
+	@JsonProperty("location")
+	private String location;
+
+	@JsonProperty("shippingDate")
+	@JsonFormat(shape = JsonFormat.Shape.NUMBER)
+	private Long shippingDate;
+
+	@JsonProperty("deliveryDate")
+	@JsonFormat(shape = JsonFormat.Shape.NUMBER)
+	private Long deliveryDate;
+
+	public Long getOrderId() {
+		return orderId;
+	}
+
+	public void setOrderId(Long orderId) {
+		this.orderId = orderId;
+	}
+
+	public Double getOrderPrice() {
+		return orderPrice;
+	}
+
+	public void setOrderPrice(Double orderPrice) {
+		this.orderPrice = orderPrice;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+
+	public Long getShippingDate() {
+		return shippingDate;
+	}
+
+	public void setShippingDate(Long shippingDate) {
+		this.shippingDate = shippingDate;
+	}
+
+	public Long getDeliveryDate() {
+		return deliveryDate;
+	}
+
+	public void setDeliveryDate(Long deliveryDate) {
+		this.deliveryDate = deliveryDate;
+	}
+	
+	
+
+}

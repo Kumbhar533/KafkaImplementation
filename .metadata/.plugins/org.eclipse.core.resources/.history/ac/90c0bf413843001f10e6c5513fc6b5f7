@@ -1,0 +1,11 @@
+package com.nilesh.kafka.producer.config;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class producerConfig {
+	
+	
+	@Value(value  = "${spring.kafka.bootstrap-servers}")
+	private static final String KAFKA_SERVERS;
+
+}

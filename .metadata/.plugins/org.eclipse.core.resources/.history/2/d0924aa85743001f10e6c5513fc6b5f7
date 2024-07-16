@@ -1,0 +1,27 @@
+package com.nilesh.kafka.consumer;
+
+import java.util.Date;
+
+public class orderEntity {
+
+
+    @JsonProperty("orderId")
+    private Long orderId;
+
+    @JsonProperty("orderPrice")
+    private Double orderPrice;
+
+    @JsonProperty("location")
+    private String location;
+
+    @JsonProperty("shippingDate")
+    @JsonFormat(shape = JsonFormat.Shape.NUMBER)
+    private Long shippingDate;
+
+    @JsonProperty("deliveryDate")
+    @JsonFormat(shape = JsonFormat.Shape.NUMBER)
+    private Long deliveryDate;
+
+	
+
+}
